@@ -39,7 +39,7 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/portfolio" className="text-2xl font-cursive text-brand-purple dark:text-primary">
+          <Link href="/" className="text-2xl font-cursive text-brand-purple dark:text-primary">
             Lucas Pinto dos Reis
           </Link>
         </div>

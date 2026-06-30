@@ -186,7 +186,7 @@ export const en = {
       {
             "title": "Photo Tint Modifier",
             "category": "AI & Automation",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/photo_tint.png",
             "youtubeId": "",
             "concept": "A desktop utility designed to restore and batch-process legacy scanned photographs automatically. The user experience needed to be effortless: point the app at a folder, and watch it seamlessly identify and correct color degradation (specifically red and yellow tint hues) and fix incorrect orientations without risking image data loss.",
             "logicWorkflow": "I prompted the AI to handle the backend computer vision architecture first, utilizing OpenCV and Pillow (PIL) for image analysis. The workflow was broken down into asynchronous worker threads to prevent the UI from blocking while scanning massive directories. I orchestrated a step-by-step logic pipeline: detect extreme red/yellow color hues, detect rotation anomalies via EXIF, and then wrap this processing core in a sleek, dark-themed PyQt6 interface that visually labels problematic files before applying batch fixes.",
@@ -197,7 +197,7 @@ export const en = {
       {
             "title": "Smart File Organizer",
             "category": "AI & Automation",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/fileorganizer.png",
             "youtubeId": "102yy_mzzKw",
             "concept": "An automated backend engine designed to sift through thousands of disorganized files and photos, structuring them into a clean, chronological directory tree. The goal was to take the manual labor out of file management by relying on embedded file metadata.",
             "logicWorkflow": "I needed the file organizer to parse EXIF data first, then dynamically create directory trees based on the extracted Year/Month chronological data. I prompted the AI to build the core file-traversal loop using Python's OS and Shutil libraries, and then integrated Pillow's EXIF modules to read the origin dates of media files securely before triggering the move operations.",
@@ -219,7 +219,7 @@ export const en = {
       {
             "title": "Lux Iconic VST",
             "category": "Audio & VST Plugins",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/lux.png",
             "youtubeId": "",
             "concept": "A lush, multi-effects guitar VST3 plugin aimed at modern, ambient, and shoegaze guitarists. Instead of a sterile digital interface, it acts as an all-in-one boutique pedalboard, featuring custom DSP modules like \"Crystal Pitch Delay\", \"Lush Shimmer Reverb\", \"Swervedriver Chorus\", and a \"Modern Amp Head\".",
             "logicWorkflow": "Also built using JUCE and C++, I prompted the AI to structure the DSP chain modularly (`DSP_Modules.h`). This object-oriented approach ensured that each effect—from the Analog Phaser to the SciFi Bounce—operated independently in memory before hitting the master amp head simulation, making it easy to toggle and route signals without introducing phase issues.",
@@ -229,7 +229,7 @@ export const en = {
       },      {
             "title": "LPTV (Broadcast TV Ecosystem)",
             "category": "Creative Technology",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/lptv.png",
             "youtubeId": "9RyXAGbCcFU",
             "concept": "A dynamic, immersive web ecosystem designed to simulate a live Heavy Metal & Rock TV broadcast. The goal was to create a deeply atmospheric, \"futuristic HUD\" aesthetic (think Cyberpunk meets MTV), giving the user a persistent, uninterrupted visual and audio streaming experience complete with live tickers and playlist databases.",
             "logicWorkflow": "I approached this by defining the visual interface and grid constraints first, as the aesthetic *was* the core feature. I directed the AI to build a CSS Grid overlay over a borderless YouTube iframe to hide default playback controls and create a custom \"TV frame.\" Once the frontend structure and neon color tokens (magenta, cyan, green) were in place, I prompted the AI to construct the backend logic: an interconnected `playlist_db.js` system that seamlessly transitions video content to mimic live TV broadcasting.",
@@ -240,7 +240,7 @@ export const en = {
       {
             "title": "LPRadio (Immersive Radio Spinoff)",
             "category": "Creative Technology",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/lpradio.png",
             "youtubeId": "isjWW9iKXsY",
             "concept": "Conceived as an audio-focused spinoff of the LPTV ecosystem, LPRadio strips away the TV broadcasts' video elements to focus entirely on an immersive radio experience. Utilizing the exact same underlying playlist technology, it creates an atmospheric audio player with a focus on frequency visualizers rather than moving pictures.",
             "logicWorkflow": "To build this spinoff, I reused the robust `playlist_db.js` architecture developed for LPTV. I instructed the AI to strip out the heavy video-rendering iframe logic and replace it with a lightweight audio-only player. The visual real estate was re-allocated to a dynamic frequency visualizer that pulses in time with the music, maintaining the \"Cyberpunk meets MTV\" aesthetic but tailored for a pure audio experience.",
@@ -251,7 +251,7 @@ export const en = {
       {
             "title": "CRT TV Simulator",
             "category": "Creative Technology",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/crt_tv_sim.png",
             "youtubeId": "Kug6lgEWTuo",
             "concept": "A nostalgic, interactive web and desktop application that replicates the visual aesthetics and user experience of a vintage CRT television. The goal was to achieve perfect scanlines, RGB separation, and screen curvature while keeping performance high.",
             "logicWorkflow": "I instructed the AI to build a custom CSS/WebGL shader pipeline to simulate the CRT distortion accurately. To ensure cross-platform compatibility, I architected the app to use a shared codebase, wrapping the web layer into Tauri for a lightweight desktop executable and Capacitor for mobile.",
@@ -262,7 +262,7 @@ export const en = {
       {
             "title": "Lux iSim (iPod Classic Simulator)",
             "category": "Creative Technology",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/ipodsim.png",
             "youtubeId": "BaG1PSasEn8",
             "concept": "A functional software replica of the iconic iPod Classic, tapping into modern APIs to play real music while preserving the tactile click-wheel navigation experience.",
             "logicWorkflow": "The core challenge was translating a physical click-wheel interaction into a digital, gesture-based UI. I mapped out the state machine for the iPod's menus and instructed the AI to build a circular scroll event listener in React. I then integrated the Spotify API, prompting the agent to handle OAuth flows and token refresh seamlessly in the background.",
@@ -273,7 +273,7 @@ export const en = {
       {
             "title": "AI-VA Cassette Simulator",
             "category": "Creative Technology",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/cassette.png",
             "youtubeId": "BQoPmczXG6Q",
             "concept": "A retro-themed audio player that streams real online radio stations, wrapped in a skeuomorphic cassette tape interface. It was designed to feel tactile and immersive.",
             "logicWorkflow": "I needed a robust backend to source live streams. I prompted the AI to build a Python web scraper to fetch and parse USA radio station streams, cleaning the data and exporting it to JSON. For the frontend, I guided the agent to build realistic play/rewind animations using React, ensuring the audio buffer didn't break when simulating tape skipping.",
@@ -317,7 +317,7 @@ export const en = {
       {
             "title": "LUX PNG Tuber",
             "category": "Creative Technology",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/png_tuber.png",
             "youtubeId": "wGfJpQ1qDUw",
             "concept": "A lightweight broadcasting tool for streamers, animating a 2D avatar based on microphone input. A perfect, low-resource alternative to full 3D VTubing setups.",
             "logicWorkflow": "The app needed to react to audio thresholds instantly. I prompted the AI to build real-time audio listener logic that triggers specific sprite states (talking, idle, blinking) based on decibel levels, allowing custom sprite uploads and easy threshold calibration.",
