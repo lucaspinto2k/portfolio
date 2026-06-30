@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -62,13 +61,11 @@ const Navbar = () => {
 
           <div className="ml-8 flex items-center gap-4">
             <LanguageToggle />
-            <ThemeToggle />
           </div>
         </nav>
 
         <div className="flex items-center md:hidden gap-2">
           <LanguageToggle />
-          <ThemeToggle />
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="ml-4 p-2"
