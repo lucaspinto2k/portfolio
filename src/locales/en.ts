@@ -201,14 +201,18 @@ export const en = {
             "youtubeId": "102yy_mzzKw",
             "concept": "An automated backend engine designed to sift through thousands of disorganized files and photos, structuring them into a clean, chronological directory tree. The goal was to take the manual labor out of file management by relying on embedded file metadata.",
             "logicWorkflow": "I needed the file organizer to parse EXIF data first, then dynamically create directory trees based on the extracted Year/Month chronological data. I prompted the AI to build the core file-traversal loop using Python's OS and Shutil libraries, and then integrated Pillow's EXIF modules to read the origin dates of media files securely before triggering the move operations.",
+            "logoUrl": "/images/projects/fileorganizer.png",
+            "youtubeId": "102yy_mzzKw",
+            "concept": "An automated backend engine designed to sift through thousands of disorganized files and photos, structuring them into a clean, chronological directory tree. The goal was to take the manual labor out of file management by relying on embedded file metadata.",
+            "logicWorkflow": "I needed the file organizer to parse EXIF data first, then dynamically create directory trees based on the extracted Year/Month chronological data. I prompted the AI to build the core file-traversal loop using Python's OS and Shutil libraries, and then integrated Pillow's EXIF modules to read the origin dates of media files securely before triggering the move operations.",
             "logicTriumphs": "The biggest roadblock the AI hit was that many legacy files, screenshots, or downloaded images were entirely missing date metadata or had corrupted EXIF headers, which would cause the script to crash mid-operation. I used my logic to steer it out of this dead end by prompting the AI to write robust `try/except` exception handlers for missing metadata, creating a fallback logic tree that routed those files into an \"Uncategorized\" folder based on their OS-level creation date.",
             "tech": "- **Backend:** Python, Pillow (PIL), OS/Shutil - **Platforms:** CLI / Cross-Platform",
             "result": "*[Insert Video/GIF here: A screen recording showing a chaotic folder being instantly sorted into beautifully nested Year and Month directories via a terminal command.]*"
       },
       {
             "title": "The Dread Engine",
-            "category": "Audio & VST Plugins",
-            "logoUrl": "",
+            "category": "Games",
+            "logoUrl": "/images/projects/dread.png",
             "youtubeId": "-LQCQUZLSpc",
             "concept": "A highly experimental, atmospheric VST3/Standalone audio plugin designed for dark soundscapes and horror sound design. The plugin empowers sound designers with unconventional parameters like \"Shepherd Speed\", \"Tape Degradation\", \"Formant Agony\", and \"Abyss Depth\" to twist audio into terrifying, cinematic textures.",
             "logicWorkflow": "I utilized the JUCE framework in C++ to build a high-performance audio engine. I prompted the AI to set up the DSP logic for unconventional audio processing: Tape Wow, Formant Shifting, and Shepherd Tones. Because the interface required a raw, industrial feel, I integrated custom fonts (`SpecialElite.ttf`) and dark, gritty UI assets directly into the binary data pipeline via CMake.",
@@ -226,7 +230,7 @@ export const en = {
             "logicTriumphs": "Developing the \"Lush Shimmer Reverb\" involved complex recursive pitch-shifting within a reverb feedback loop. The AI struggled to implement this without causing runaway feedback spikes (digital screeching) when the mix was pushed high. I stepped in to implement strict DSP clipping and gain staging inside the feedback matrix, ensuring the shimmer effect bloomed and decayed musically instead of blowing out the audio engine.",
             "tech": "- **Languages:** C++, CMake - **Framework:** JUCE Audio Framework - **Platforms:** Windows (VST3 & Standalone Plugin)",
             "result": "*[Insert Video/GIF here: A quick screen recording playing a clean guitar DI through the plugin, showing the lush UI and hearing the shimmer reverb and crystal delay open up the stereo field.]*"
-      },      {
+      },      {
             "title": "LPTV (Broadcast TV Ecosystem)",
             "category": "Creative Technology",
             "logoUrl": "/images/projects/lptv.png",
@@ -284,7 +288,7 @@ export const en = {
       {
             "title": "Lux Video Watermarker",
             "category": "Desktop & Utilities",
-            "logoUrl": "",
+            "logoUrl": "/images/projects/watermarker.png",
             "youtubeId": "dKRxOY88Gws",
             "concept": "A cross-platform app that allows creators to batch-apply watermarks to video files efficiently. Designed for speed and ease of use, eliminating the need to open heavy video editors just to brand content.",
             "logicWorkflow": "I needed a high-performance engine to process video without massive overhead. I chose Flutter for a unified UI across all platforms. I directed the AI to integrate FFMPEG bindings, prompting it to calculate optimal watermark scaling algorithms so the logo maintains proportion regardless of the video's resolution.",
@@ -317,36 +321,6 @@ export const en = {
       {
             "title": "LUX PNG Tuber",
             "category": "Creative Technology",
-            "logoUrl": "/images/projects/png_tuber.png",
-            "youtubeId": "wGfJpQ1qDUw",
-            "concept": "A lightweight broadcasting tool for streamers, animating a 2D avatar based on microphone input. A perfect, low-resource alternative to full 3D VTubing setups.",
-            "logicWorkflow": "The app needed to react to audio thresholds instantly. I prompted the AI to build real-time audio listener logic that triggers specific sprite states (talking, idle, blinking) based on decibel levels, allowing custom sprite uploads and easy threshold calibration.",
-            "logicTriumphs": "The Web Audio API analyser node was initially too sensitive to background noise (like typing or AC humming). I implemented a dynamic noise-gate logic tree that calibrates to the room's ambient volume on startup, ensuring the avatar only animates when the user actually speaks.",
-            "tech": "- **Frontend:** React/HTML5, Web Audio API",
-            "result": ""
-      },
-      {
-            "title": "Glass Tongue",
-            "category": "AI & Automation",
-            "logoUrl": "",
-            "youtubeId": "",
-            "concept": "A sophisticated desktop OCR and translation utility designed for real-time text extraction and translation from images or screen captures.",
-            "logicWorkflow": "I engineered the backend using Python, integrating OCR engines (like Tesseract) and translation APIs. The workflow required the AI to continuously grab a defined screen region, parse the text, and instantly display the translated overlay without lagging the primary display.",
-            "logicTriumphs": "The OCR engine often failed to read stylized fonts in video games or comics accurately. I steered the AI to implement a pre-processing pipeline in OpenCV that converts the captured region to high-contrast grayscale and upscales the resolution before feeding it to the OCR, drastically improving text recognition accuracy.",
-            "tech": "- **Backend:** Python, OpenCV, Tesseract OCR, Translation APIs - **Platforms:** Windows / Android (via Kivy/BeeWare)",
-            "result": ""
-      },
-      {
-            "title": "Lux Video Stitcher",
-            "category": "Desktop & Utilities",
-            "logoUrl": "",
-            "youtubeId": "7r0OSqf40s8",
-            "concept": "A robust desktop tool for content creators to effortlessly stitch together multiple video clips into custom layouts and collages, perfect for social media batch processing.",
-            "logicWorkflow": "Built with a Node.js backend and wrapped in Electron for desktop, the tool needed to handle heavy I/O video processing. I prompted the AI to utilize FFMPEG to handle the underlying video concatenation and cropping, while providing a clean frontend UI to let users visually arrange the layout grid.",
-            "logicTriumphs": "Merging videos with different resolutions and frame rates often caused FFMPEG to crash or produce distorted aspect ratios. I guided the AI to write a pre-processing validation script that normalizes all input clips to a standardized 1080p/60fps baseline before executing the final grid merge, ensuring a flawless export every time.",
-            "tech": "- **Frontend/Backend:** Node.js, Electron, HTML/JS - **Engine:** FFMPEG",
-            "result": ""
-      }
 ]
   },
   multimedia: {
