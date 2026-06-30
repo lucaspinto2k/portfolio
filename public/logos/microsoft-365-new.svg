@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="128" viewBox="0 0 512 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="32" width="64" height="64" fill="#F25022"/>
+  <rect x="68" y="32" width="64" height="64" fill="#7FBA00"/>
+  <rect x="0" y="100" width="64" height="64" fill="#00A4EF"/>
+  <rect x="68" y="100" width="64" height="64" fill="#FFB900"/>
+  <text x="150" y="90" font-family="Segoe UI" font-size="48" fill="#666666">Microsoft 365</text>
+</svg> 
