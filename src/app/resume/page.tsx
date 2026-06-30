@@ -144,7 +144,7 @@ export default function ResumePage() {
                 </div>
 
                 <div>
-                  <p className="text-brand-purple font-semibold">2021 - 2025</p>
+                  <p className="text-brand-purple font-semibold">2015 - 2021</p>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">Ford Motor Company</h3>
                   <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-2">South America Content Editor</p>
                   <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
