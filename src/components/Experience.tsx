@@ -85,11 +85,11 @@ const Experience = () => {
           ))}
         </div>
 
-        <h3 className="section-title text-center text-2xl mt-16 mb-8 animate-on-scroll">{dict.experience.priorTitle}</h3>
+        <h3 className="section-title text-center text-2xl mt-8 mb-6 animate-on-scroll">{dict.experience.priorTitle}</h3>
         
         <Card className="animate-on-scroll border border-gray-200 dark:border-gray-800">
           <CardContent className="p-6">
-            <div className="space-y-4">
+            <div className="space-y-0">
               {priorExperiences.map((exp, index) => (
                 <div key={index} className="flex flex-col">
                   <div className="font-semibold">{exp.title}</div>
@@ -97,7 +97,7 @@ const Experience = () => {
                     {exp.company} | {exp.duration} | {exp.location}
                   </div>
                   {index < priorExperiences.length - 1 && (
-                    <div className="border-b border-gray-200 dark:border-gray-700 my-4"></div>
+                    <div className="border-b border-gray-200 dark:border-gray-700 my-3"></div>
                   )}
                 </div>
               ))}

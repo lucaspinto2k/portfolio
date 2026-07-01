@@ -29,21 +29,21 @@ const Resume = () => {
   }, []);
 
   return (
-    <section id="resume" className="py-4" ref={sectionRef}>
+    <section id="resume" className="pt-2 pb-6" ref={sectionRef}>
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-center animate-on-scroll mb-4">Resume</h2>
+        <h2 className="text-2xl font-bold text-center animate-on-scroll mb-3">Resume</h2>
         
         <div className="max-w-xl mx-auto animate-on-scroll">
-          <p className="text-base text-muted-foreground dark:text-muted-foreground mb-6">
+          <p className="text-sm text-muted-foreground dark:text-muted-foreground mb-4">
             View my detailed resume to learn more about my professional background, education, skills, and accomplishments. Feel free to reach out if you have any questions or would like to discuss potential opportunities.
           </p>
           
           <Button 
-            className="bg-brand-purple hover:bg-brand-purple/80 text-white px-8 py-6 rounded-lg text-lg"
+            className="bg-brand-purple hover:bg-brand-purple/80 text-white px-6 py-4 rounded-md text-base"
             asChild
           >
             <Link href="/resume">
-              <FileText className="mr-2" />
+              <FileText className="mr-2 h-4 w-4" />
               Access Resume
             </Link>
           </Button>
