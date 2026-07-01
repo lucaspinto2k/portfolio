@@ -4,6 +4,7 @@ export const pt = {
     projects: "Projetos",
     skills: "Habilidades",
     experience: "Experiência",
+    education: "Educação",
     content: "Conteúdo",
     contact: "Contato"
   },

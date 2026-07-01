@@ -10,7 +10,6 @@ export default function ExperiencePage() {
           <Resume />
         </div>
         <Experience />
-        <Education />
       </div>
     </main>
   );
