@@ -129,7 +129,7 @@ const CaseStudies = () => {
   return (
     <section id="case-studies" className="py-4 bg-transparent" ref={sectionRef}>
       <div className="container mx-auto px-4">
-        <div className="text-center animate-on-scroll mb-12">
+        <div className="text-center animate-on-scroll mb-6">
           <h2 className="section-title text-center">
             {dict.caseStudies.title}
           </h2>
@@ -138,7 +138,7 @@ const CaseStudies = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 animate-on-scroll">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 animate-on-scroll">
           {/* Categories Sidebar */}
           <div className="lg:w-1/4 lg:min-w-[250px] shrink-0">
             <div className="sticky top-24 bg-white dark:bg-zinc-900/80 rounded-3xl p-4 lg:p-6 border border-gray-100 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-y-auto max-h-[85vh] scrollbar-hide">
