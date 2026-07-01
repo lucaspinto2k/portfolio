@@ -38,7 +38,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="min-h-[calc(100vh-5rem)] flex flex-col justify-center py-6 bg-transparent" ref={sectionRef}>
+    <section id="skills" className="py-4 bg-transparent" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-6 animate-on-scroll">
           <h1 className="text-3xl md:text-4xl font-display font-bold mb-2 text-foreground tracking-tight">

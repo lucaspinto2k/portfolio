@@ -41,7 +41,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" className="py-20" ref={sectionRef}>
+    <section id="experience" className="py-4" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center animate-on-scroll">{dict.experience.title}</h2>
         

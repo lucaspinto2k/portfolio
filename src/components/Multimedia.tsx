@@ -141,7 +141,7 @@ const Multimedia = () => {
   }, []);
 
   return (
-    <section id="multimedia" className="py-20 bg-muted dark:bg-muted" ref={sectionRef}>
+    <section id="multimedia" className="py-4 bg-muted dark:bg-muted" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center animate-on-scroll mb-12">Multimedia</h2>
 
@@ -153,6 +153,7 @@ const Multimedia = () => {
                   className="absolute top-0 left-0 w-full h-full"
                   src={`https://www.youtube.com/embed/${video.id}`}
                   title={video.title}
+                  loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />

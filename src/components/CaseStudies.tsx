@@ -127,13 +127,13 @@ const CaseStudies = () => {
   const filteredProjects = allProjects.filter(p => p.category === activeCategory);
 
   return (
-    <section id="case-studies" className="py-20 bg-transparent" ref={sectionRef}>
+    <section id="case-studies" className="py-4 bg-transparent" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-foreground tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-display font-bold mb-2 text-foreground tracking-tight">
             {dict.caseStudies.title}
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             {dict.caseStudies.subtitle}
           </p>
         </div>

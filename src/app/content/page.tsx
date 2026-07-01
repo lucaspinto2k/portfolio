@@ -5,7 +5,7 @@ import Podcasts from "@/components/Podcasts";
 
 export default function ContentPage() {
   return (
-    <main className="min-h-screen pt-24 pb-12">
+    <main className="min-h-screen pt-12 pb-12">
       <div className="container mx-auto px-4 space-y-12">
         <Multimedia />
         <Localization />
