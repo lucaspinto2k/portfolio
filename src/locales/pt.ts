@@ -207,7 +207,7 @@ export const pt = {
       },
       {
             "title": "The Dread Engine",
-            "category": "Games",
+            "category": "Áudio & Plugins",
             "logoUrl": "/images/projects/dread.png",
             "youtubeId": "-LQCQUZLSpc",
             "concept": "A highly experimental, atmospheric VST3/Standalone audio plugin designed for dark soundscapes and horror sound design. The plugin empowers sound designers with unconventional parameters like \"Shepherd Speed\", \"Tape Degradation\", \"Formant Agony\", and \"Abyss Depth\" to twist audio into terrifying, cinematic textures.",
