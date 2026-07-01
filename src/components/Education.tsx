@@ -19,12 +19,34 @@ interface Certification {
 
 const Education: React.FC = () => {
   const { dict } = useLanguage();
+  const sectionRef = React.useRef<HTMLDivElement>(null);
   
   const education = dict.education.schools;
   const certifications = dict.education.certifications;
 
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const sectionTop = sectionRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (sectionTop < windowHeight * 0.85) {
+          const elements = sectionRef.current.querySelectorAll('.animate-on-scroll');
+          elements.forEach((el) => {
+            el.classList.add('animated');
+          });
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Add a small delay to ensure initial render is complete
+    setTimeout(handleScroll, 100);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section id="education" className="py-8">
+    <section id="education" className="py-8" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center animate-on-scroll">{dict.education.title}</h2>
         
