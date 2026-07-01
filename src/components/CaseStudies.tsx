@@ -129,11 +129,11 @@ const CaseStudies = () => {
   return (
     <section id="case-studies" className="py-4 bg-transparent" ref={sectionRef}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-on-scroll">
-          <h1 className="text-3xl md:text-4xl font-display font-bold mb-2 text-foreground tracking-tight">
+        <div className="text-center animate-on-scroll mb-12">
+          <h2 className="section-title text-center">
             {dict.caseStudies.title}
-          </h1>
-          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+          </h2>
+          <p className="text-lg text-center text-muted-foreground max-w-3xl mx-auto">
             {dict.caseStudies.subtitle}
           </p>
         </div>
