@@ -321,6 +321,47 @@ export const en = {
       {
             "title": "LUX PNG Tuber",
             "category": "Creative Technology",
+            "logoUrl": "/images/projects/png_tuber.png",
+            "youtubeId": "wGfJpQ1qDUw",
+            "concept": "A lightweight broadcasting tool for streamers, animating a 2D avatar based on microphone input. A perfect, low-resource alternative to full 3D VTubing setups.",
+            "logicWorkflow": "The app needed to react to audio thresholds instantly. I prompted the AI to build real-time audio listener logic that triggers specific sprite states (talking, idle, blinking) based on decibel levels, allowing custom sprite uploads and easy threshold calibration.",
+            "logicTriumphs": "The Web Audio API analyser node was initially too sensitive to background noise (like typing or AC humming). I implemented a dynamic noise-gate logic tree that calibrates to the room's ambient volume on startup, ensuring the avatar only animates when the user actually speaks.",
+            "tech": "- **Frontend:** React/HTML5, Web Audio API",
+            "result": ""
+      },
+      {
+            "title": "Glass Tongue",
+            "category": "Software Engineering",
+            "logoUrl": "",
+            "youtubeId": "",
+            "concept": "A sophisticated desktop OCR and translation utility designed for real-time text extraction and translation from images or screen captures.",
+            "logicWorkflow": "I engineered the backend using Python, integrating OCR engines (like Tesseract) and translation APIs. The workflow required the AI to continuously grab a defined screen region, parse the text, and instantly display the translated overlay without lagging the primary display.",
+            "logicTriumphs": "The OCR engine often failed to read stylized fonts in video games or comics accurately. I steered the AI to implement a pre-processing pipeline in OpenCV that converts the captured region to high-contrast grayscale and upscales the resolution before feeding it to the OCR, drastically improving text recognition accuracy.",
+            "tech": "- **Backend:** Python, OpenCV, Tesseract OCR, Translation APIs - **Platforms:** Windows / Android (via Kivy/BeeWare)",
+            "result": ""
+      },
+      {
+            "title": "Lux Video Stitcher",
+            "category": "Software Engineering",
+            "logoUrl": "/images/projects/stitcher.png",
+            "youtubeId": "7r0OSqf40s8",
+            "concept": "A robust desktop tool for content creators to effortlessly stitch together multiple video clips into custom layouts and collages, perfect for social media batch processing.",
+            "logicWorkflow": "Built with a Node.js backend and wrapped in Electron for desktop, the tool needed to handle heavy I/O video processing. I prompted the AI to utilize FFMPEG to handle the underlying video concatenation and cropping, while providing a clean frontend UI to let users visually arrange the layout grid.",
+            "logicTriumphs": "Merging videos with different resolutions and frame rates often caused FFMPEG to crash or produce distorted aspect ratios. I guided the AI to write a pre-processing validation script that normalizes all input clips to a standardized 1080p/60fps baseline before executing the final grid merge, ensuring a flawless export every time.",
+            "tech": "- **Frontend/Backend:** Node.js, Electron, HTML/JS - **Engine:** FFMPEG",
+            "result": ""
+      },
+      {
+            "title": "PNG Transparency",
+            "category": "Desktop & Utilities",
+            "logoUrl": "/images/projects/png.png",
+            "youtubeId": "i1qq46BzpXk",
+            "concept": "A desktop utility that intelligently removes backgrounds and handles PNG transparency for content creators, streamlining the process of generating transparent assets for videos and graphics.",
+            "logicWorkflow": "Built a Python-based processing pipeline utilizing OpenCV and background-removal models. The AI was prompted to implement edge-detection algorithms to cleanly cut out subjects without leaving halos or artifacts.",
+            "logicTriumphs": "Handling semi-transparent elements like hair and glass was initially resulting in jagged edges. I guided the AI to integrate an alpha-matting technique that preserves the gradient transparency on complex edges, leading to professional-grade cutouts.",
+            "tech": "- **Backend:** Python, OpenCV, AI Matting Models",
+            "result": ""
+      }
 ]
   },
   multimedia: {

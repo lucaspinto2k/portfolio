@@ -321,6 +321,46 @@ export const pt = {
       {
             "title": "LUX PNG Tuber",
             "category": "Tecnologia Criativa",
+            "logoUrl": "/images/projects/png_tuber.png",
+            "youtubeId": "wGfJpQ1qDUw",
+            "concept": "Uma ferramenta leve de transmissão para streamers, animando um avatar 2D baseado na entrada do microfone. Uma alternativa perfeita e de baixo recurso para configurações completas de VTubing 3D.",
+            "logicWorkflow": "O aplicativo precisava reagir aos limites de áudio instantaneamente. Eu instruí a IA a construir a lógica do ouvinte de áudio em tempo real que aciona estados específicos do sprite (falando, ocioso, piscando) com base nos níveis de decibéis, permitindo uploads de sprites personalizados e calibração fácil de limites.",
+            "logicTriumphs": "O nó analisador da API Web Audio era inicialmente muito sensível ao ruído de fundo (como digitação ou zumbido do AC). Eu implementei uma árvore lógica dinâmica de noise-gate que calibra para o volume ambiente da sala na inicialização, garantindo que o avatar só anime quando o usuário realmente falar.",
+            "tech": "- **Frontend:** React/HTML5, Web Audio API",
+            "result": ""
+      },
+      {
+            "title": "Glass Tongue",
+            "category": "Engenharia de Software",
+            "logoUrl": "",
+            "youtubeId": "",
+            "concept": "Um sofisticado utilitário de OCR de desktop e tradução projetado para extração e tradução de texto em tempo real de imagens ou capturas de tela.",
+            "logicWorkflow": "Projetei o backend usando Python, integrando motores OCR (como Tesseract) e APIs de tradução. O fluxo de trabalho exigiu que a IA capturasse continuamente uma região de tela definida, analisasse o texto e exibisse instantaneamente a sobreposição traduzida sem atrasar a tela principal.",
+            "logicTriumphs": "O motor OCR frequentemente falhava na leitura precisa de fontes estilizadas em videogames ou quadrinhos. Direcionei a IA a implementar uma pipeline de pré-processamento no OpenCV que converte a região capturada para tons de cinza de alto contraste e aumenta a resolução antes de alimentar o OCR, melhorando drasticamente a precisão do reconhecimento de texto.",
+            "tech": "- **Backend:** Python, OpenCV, Tesseract OCR, APIs de Tradução - **Plataformas:** Windows / Android (via Kivy/BeeWare)",
+            "result": ""
+      },
+      {
+            "title": "Lux Video Stitcher",
+            "category": "Engenharia de Software",
+            "logoUrl": "/images/projects/stitcher.png",
+            "youtubeId": "7r0OSqf40s8",
+            "concept": "Uma ferramenta de desktop robusta para criadores de conteúdo montarem facilmente vários clipes de vídeo em layouts personalizados e colagens, perfeito para processamento em lote de mídia social.",
+            "logicWorkflow": "Construído com um backend Node.js e envolto em Electron para desktop, a ferramenta precisava lidar com processamento de vídeo de I/O pesado. Instruí a IA a utilizar FFMPEG para lidar com a concatenação e corte de vídeo subjacentes, fornecendo uma interface de usuário frontend limpa para permitir que os usuários organizem visualmente o grid de layout.",
+            "logicTriumphs": "Mesclar vídeos com resoluções e taxas de quadros diferentes frequentemente causava o travamento do FFMPEG ou produzia proporções distorcidas. Eu orientei a IA a escrever um script de validação de pré-processamento que normaliza todos os clipes de entrada para uma linha de base padronizada de 1080p/60fps antes de executar a mesclagem de grade final, garantindo uma exportação sem falhas toda vez.",
+            "tech": "- **Frontend/Backend:** Node.js, Electron, HTML/JS - **Motor:** FFMPEG",
+            "result": ""
+      },
+      {
+            "title": "PNG Transparency",
+            "category": "Utilitários Desktop",
+            "logoUrl": "/images/projects/png.png",
+            "youtubeId": "i1qq46BzpXk",
+            "concept": "Um utilitário de desktop que remove de forma inteligente o fundo e lida com a transparência PNG para criadores de conteúdo, otimizando o processo de geração de ativos transparentes para vídeos e gráficos.",
+            "logicWorkflow": "Construí um pipeline de processamento em Python utilizando OpenCV e modelos de remoção de fundo. A IA foi instruída a implementar algoritmos de detecção de bordas para recortar temas de forma limpa, sem deixar halos ou artefatos.",
+            "logicTriumphs": "O manuseio de elementos semitransparentes, como cabelos e vidros, inicialmente resultava em bordas serrilhadas. Eu orientei a IA a integrar uma técnica de matização alfa que preserva o gradiente de transparência em bordas complexas, resultando em recortes de nível profissional.",
+            "tech": "- **Backend:** Python, OpenCV, Modelos de IA de Matização",
+            "result": ""
       }
 ]
   },
