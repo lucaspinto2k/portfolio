@@ -106,10 +106,10 @@ The AI struggled with maintaining a seamless visual experience when transitionin
 
 ---
 
-## 6. CRT TV Simulator
+## 6. CRT + Other Screens Simulator
 
-**The Concept:** 
-A nostalgic, interactive web and desktop application that replicates the visual aesthetics and user experience of a vintage CRT television. The goal was to achieve perfect scanlines, RGB separation, and screen curvature while keeping performance high.
+**Concept:**
+A nostalgic, interactive web and desktop application that replicates the visual aesthetics and user experience of a vintage CRT television. The app now also simulates other screens including Arcade Machine, Arcade Racing Machine and Vintage PC. The goal was to achieve perfect scanlines, RGB separation, and screen curvature while keeping performance high.
 
 **The Logic & Workflow:** 
 I instructed the AI to build a custom CSS/WebGL shader pipeline to simulate the CRT distortion accurately. To ensure cross-platform compatibility, I architected the app to use a shared codebase, wrapping the web layer into Tauri for a lightweight desktop executable and Capacitor for mobile.

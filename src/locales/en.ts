@@ -250,11 +250,11 @@ export const en = {
             "result": "*[Insert Video/GIF here: A short recording showing the sleek dark-mode UI, the pulsing neon ambient glow, and the frequency visualizer bouncing in time with the music.]*"
       },
       {
-            "title": "CRT TV Simulator",
+            "title": "CRT + Other Screens Simulator",
             "category": "Creative Technology",
             "logoUrl": "/images/projects/crt_tv_sim.png",
-            "youtubeId": "Kug6lgEWTuo",
-            "concept": "A nostalgic, interactive web and desktop application that replicates the visual aesthetics and user experience of a vintage CRT television. The goal was to achieve perfect scanlines, RGB separation, and screen curvature while keeping performance high.",
+            "youtubeId": "2-wxEM1APDo",
+            "concept": "A nostalgic, interactive web and desktop application that replicates the visual aesthetics and user experience of a vintage CRT television. The app now also simulates other screens including Arcade Machine, Arcade Racing Machine and Vintage PC. The goal was to achieve perfect scanlines, RGB separation, and screen curvature while keeping performance high.",
             "logicWorkflow": "I instructed the AI to build a custom CSS/WebGL shader pipeline to simulate the CRT distortion accurately. To ensure cross-platform compatibility, I architected the app to use a shared codebase, wrapping the web layer into Tauri for a lightweight desktop executable and Capacitor for mobile.",
             "logicTriumphs": "The AI struggled with WebGL shader performance, causing severe lag and battery drain on mobile devices. I intervened by guiding the AI to optimize the scanline rendering loops and dynamically reduce texture resolution on smaller viewports, ensuring a smooth 60FPS CRT effect across all devices without losing the retro fidelity.",
             "tech": "- **Frontend/Backend:** HTML/JS/CSS, WebGL, Tauri (Desktop), Capacitor (Mobile)",
